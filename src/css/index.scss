@@ -30,6 +30,13 @@
     padding: 0 10px;
     background: rgb(0, 105, 62);
     background: linear-gradient(0deg, rgba(0, 105, 62, 1) 10%, rgba(255, 255, 255, 1) 100%);
+
+    .author {
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 5px white, -3px -3px 5px white;
+        padding: 40px;
+    }
 }
 
 header {
@@ -41,6 +48,7 @@ header {
     .header-logo {
         font-family: 'Sassy Frass', cursive;
         font-size: 100px;
+        padding: 10px 20px;
         font-weight: 600;
     }
 
@@ -98,6 +106,7 @@ main {
             }
 
             .card h1 {
+                transition: all 0.5s linear;
                 font-size: 20px;
             }
 
@@ -108,7 +117,7 @@ main {
             .card:hover {
                 h1 {
                     font-size: 0;
-                    transition: all 0.5s;
+                    transition: all 0.5s linear;
                 }
             }
 
@@ -187,30 +196,81 @@ main {
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 30px 200px;
+            margin: 20px;
 
-            .skill-item__detail {
+            .skill-item__card {
                 width: 100%;
-                padding: 20px;
-
-                img {
-                    width: 100%;
-                    margin: auto;
-                    border-radius: 10px;
-                }
-
-                h3 {
-                    font-size: 25px;
-                    margin: 10px 0;
-                }
-            }
-
-            .skill-item__detail:hover {
-                transform: scale(1.1);
+                height: 80%;
+                transition: all .5s;
+                box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+                    -15px -15px 30px rgba(60, 60, 60, 0.082);
+                text-align: center;
+                overflow: hidden;
+                background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
                 border-radius: 10px;
-                background-color: white;
-                color: #00693e;
-                transition: 0.1s linear;
             }
+
+            .skill-item__card:hover {
+                height: 120%;
+            }
+
+            .skill-item__card .header-card {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #212121;
+                margin-bottom: 16px;
+            }
+
+            .skill-item__card .header-card .img-card img {
+                width: 100px;
+            }
+
+            .skill-item__card .header-card .title-card {
+                font-size: 1.8em;
+                letter-spacing: .1em;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 4px 0 14px 0;
+                transition: all .5s;
+                color: #edededc5;
+            }
+
+            .skill-item__card:hover .header-card {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+            }
+
+            .skill-item__card:hover .header-card .title-card {
+                padding: 0;
+                font-size: 2.1em;
+            }
+
+            .skill-item__card .content-card a {
+                display: flex;
+                color: #212121;
+                margin: 0 18px;
+                line-height: 18px;
+                transition: all 0.5s linear;
+                text-decoration: none;
+            }
+
+            .skill-item__card .content-card svg {
+                width: 18px;
+                margin: 0 5px;
+            }
+
+            .skill-item__card .content-card a:hover {
+                font-size: 20px;
+                color: #00693e;
+                text-decoration: underline;
+            }
+
+            .skill-item__card .content-card a:hover svg {
+                width: 20px;
+            }
+
         }
     }
 
@@ -258,7 +318,7 @@ main {
                     padding: 0.7em;
                     margin-left: 0.5em;
                     pointer-events: none;
-                    transition: all 0.3s ease;
+                    transition: all 0.5s ease;
                     color: black
                 }
 
@@ -274,7 +334,7 @@ main {
                     border-color: white;
                     color: black;
                     background-color: white;
-                    transition: all 0.3s ease;
+                    transition: all 0.5s ease;
                 }
 
                 button {
