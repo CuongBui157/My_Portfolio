@@ -20,14 +20,15 @@
     border-radius: 73% 27% 71% 29%/24% 79% 21% 76%;
   }
 }
-.container {
+#container {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   margin: auto;
   padding: 0 10px;
   background: rgb(0, 105, 62);
   background: linear-gradient(0deg, rgb(0, 105, 62) 10%, rgb(255, 255, 255) 100%);
 }
-.container .author {
+#container .author {
   text-align: center;
   color: white;
   text-shadow: 3px 3px 5px white, -3px -3px 5px white;
