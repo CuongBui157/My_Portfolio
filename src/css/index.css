@@ -62,21 +62,21 @@ header .header-nav .nav-menu ul li button:hover {
   transition: 0.2s linear;
 }
 
-main .banner {
+main #banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 0;
 }
-main .banner .banner-hello {
+main #banner .banner-hello {
   font-size: 30px;
   padding-left: 200px;
 }
-main .banner .banner-img {
+main #banner .banner-img {
   width: auto;
   padding: 0 200px;
   text-align: center;
 }
-main .banner .banner-img .card {
+main #banner .banner-img .card {
   width: 380px;
   height: 240px;
   background-color: #eee;
@@ -87,18 +87,18 @@ main .banner .banner-img .card {
   transition: 0.5s;
   padding: 20px 0;
 }
-main .banner .banner-img .card h1 {
+main #banner .banner-img .card h1 {
   transition: all 0.5s linear;
   font-size: 20px;
 }
-main .banner .banner-img .card:hover {
+main #banner .banner-img .card:hover {
   height: 520px;
 }
-main .banner .banner-img .card:hover h1 {
+main #banner .banner-img .card:hover h1 {
   font-size: 0;
   transition: all 0.5s linear;
 }
-main .banner .banner-img img {
+main #banner .banner-img img {
   width: 120px;
   height: 120px;
   color: red;
@@ -109,7 +109,7 @@ main .banner .banner-img img {
   border-radius: 50%;
   box-shadow: 8px 8px 10px #ddd, -8px -8px 10px #fff;
 }
-main .banner .banner-img .content {
+main #banner .banner-img .content {
   color: #999;
   text-align: left;
   background-color: #eee;
@@ -120,33 +120,33 @@ main .banner .banner-img .content {
   transform: translateY(-180px) scale(0);
   transition: all 0.5s;
 }
-main .banner .banner-img .card:hover .content {
+main #banner .banner-img .card:hover .content {
   transform: translateY(0) scale(1);
 }
-main .banner .banner-img .content h3 {
+main #banner .banner-img .content h3 {
   line-height: 20px;
   text-shadow: 2px 2px 0px #fff;
   text-align: center;
   margin-bottom: 20px;
 }
-main .banner .banner-img .content p {
+main #banner .banner-img .content p {
   font-size: 13px;
 }
-main .banner .banner-img .content .content-item__link {
+main #banner .banner-img .content .content-item__link {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-main .banner .banner-img .content .content-item__link a {
+main #banner .banner-img .content .content-item__link a {
   width: 30px;
   height: 30px;
 }
-main .banner .banner-img .content .content-item__link a img {
+main #banner .banner-img .content .content-item__link a img {
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   width: 30px;
   height: 30px;
 }
-main .banner .banner-img .content .content-item__link a img:hover {
+main #banner .banner-img .content .content-item__link a img:hover {
   transform: scale(1.5) translateY(-20%);
   transition: 0.1s linear;
 }
