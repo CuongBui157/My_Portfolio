@@ -20,15 +20,16 @@
     border-radius: 73% 27% 71% 29%/24% 79% 21% 76%;
   }
 }
-#container {
+.home {
   width: 100%;
   font-family: "Poppins", sans-serif;
   margin: auto;
   padding: 0 10px;
-  background: rgb(0, 105, 62);
-  background: linear-gradient(0deg, rgb(0, 105, 62) 10%, rgb(255, 255, 255) 100%);
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #00693e 100%);
+
 }
-#container .author {
+.home .author {
   text-align: center;
   color: white;
   text-shadow: 3px 3px 5px white, -3px -3px 5px white;
@@ -69,7 +70,7 @@ main #banner {
   padding: 30px 0;
 }
 main #banner .banner-hello {
-  font-size: 30px;
+  font-size: 40px;
   padding-left: 200px;
 }
 main #banner .banner-img {

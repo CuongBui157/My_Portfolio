@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @keyframes img-before {
     0% {
         border-radius: 73% 27% 71% 29% / 24% 79% 21% 76%;
@@ -24,13 +23,12 @@
     }
 }
 
-#container {
+.home {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     margin: auto;
     padding: 0 10px;
-    background: rgb(0, 105, 62);
-    background: linear-gradient(0deg, rgba(0, 105, 62, 1) 10%, rgba(255, 255, 255, 1) 100%);
+    background: #8FBC8B;
 
     .author {
         text-align: center;
