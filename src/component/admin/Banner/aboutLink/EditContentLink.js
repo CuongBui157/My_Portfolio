@@ -1,6 +1,6 @@
-import { getContentLink, updateContentLink } from "../../../api/contentLink";
-import { useEffect, useState } from "../../../lib";
-import { router } from "../../../lib";
+import { getContentLink, updateContentLink } from "../../../../api/contentLink";
+import { useEffect, useState } from "../../../../lib";
+import { router } from "../../../../lib";
 import axios from "axios";
 
 const EditContentLink = ({ id }) => {

@@ -1,27 +1,29 @@
+import { getAboutContent } from "../../../api/aboutContent";
 import { getContentLinks } from "../../../api/contentLink";
-import { useEffect ,useState } from "../../../lib";
+import { useEffect, useState } from "../../../lib";
 
 const Content = () => {
   const [contentLinks, setContentLink] = useState([]);
+  const [aboutContent, setAboutContent] = useState({});
 
   useEffect(() => {
     getContentLinks().then(({ data }) => setContentLink(data));
   }, []);
 
+  useEffect(() => {
+    getAboutContent(1).then(({ data }) => setAboutContent(data));
+  }, []);
   return /*html*/ `
         <h3>ABOUT ME</h3>
 
         <p>
-            Chào các bạn, tôi là Bùi Tiến Cường. Hiện tại tôi là sinh viên
-            kỳ 5 tại FTP Polytechnic. <br />Tôi là một Front end Developer
-            chịu trách nhiệm phát triển giao diện bên ngoài của một
-            website dựa vào những bản thiết kế. <br />Email:
-            cuongbui1572003@gmail.com <br />SĐT: +84 38 247 0415
+            ${aboutContent.content}
         </p>
         <div class="content-item__link">
-            ${contentLinks.map((contentLink) => {
-              for (let i = 0; i < 4; i++) {
-                return `
+            ${contentLinks
+              .map((contentLink) => {
+                for (let i = 0; i < 4; i++) {
+                  return `
                     <a href="${contentLink.link}">
                         <img
                             src="${contentLink.img}"
@@ -29,8 +31,9 @@ const Content = () => {
                         />
                     </a>
                     `;
-              }
-            }).join("")}
+                }
+              })
+              .join("")}
         </div>
   `;
 };

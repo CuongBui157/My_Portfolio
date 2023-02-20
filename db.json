@@ -27,10 +27,20 @@
     {
       "name": "Github",
       "img": [
-        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676901045/MyPortfolio/l5z3jdeue74zr93hnslv.png"
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676906043/MyPortfolio/jclykyd2nonxn9t9bjg6.png"
       ],
       "link": "https://github.com/CuongBui157",
       "id": 4
+    }
+  ],
+  "aboutContent": [
+    {
+      "greeting": "Xin chào, tôi là Cường 🙋‍♂️",
+      "avatar": [
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676913042/MyPortfolio/uoyxql953c3ipr1e0hni.jpg"
+      ],
+      "content": "Chào các bạn, tôi là Bùi Tiến Cường. Hiện tại tôi là sinh viên kỳ 5 tại FTP Polytechnic.Tôi là một Front end Developer chịu trách nhiệm phát triển giao diện bên ngoài của một website dựa vào những bản thiết kế. Tôi sẽ trở thành một FE-Dev giỏi và được mức lương 1000$.",
+      "id": 1
     }
   ]
 }

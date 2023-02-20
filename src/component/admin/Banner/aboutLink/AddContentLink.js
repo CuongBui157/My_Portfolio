@@ -1,5 +1,5 @@
-import { addContentLink } from "../../../api/contentLink";
-import { router, useEffect } from "../../../lib";
+import { addContentLink } from "../../../../api/contentLink";
+import { router, useEffect } from "../../../../lib";
 import axios from "axios";
 
 const AddContentLink = () => {

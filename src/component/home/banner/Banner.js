@@ -1,15 +1,21 @@
+import { getAboutContent } from "../../../api/aboutContent";
+import { useEffect, useState } from "../../../lib";
 import Content from "./Content";
 
 const Banner = () => {
+  const [aboutContent, setAboutContent] = useState({});
+  useEffect(() => {
+    getAboutContent(1).then(({ data }) => setAboutContent(data));
+  },[]);
   return /*html*/ `
         <div class="banner-hello">
-            <h1>Xin chào, tôi là Cường 🙋‍♂️</h1>
+            <h1>${aboutContent.greeting}</h1>
         </div>
         <div class="banner-img">
             <div class="card">
                 <h1>ABOUT ME</h1>
                 <img
-                src="./src/img/z4117398338096_7ae3add938cd770784a70ed21f9c0bd7.jpg"
+                src="${aboutContent.avatar}"
                 alt=""
                 />
 

@@ -1,6 +1,8 @@
-import AdminHeader from "../AdminHeader";
-import { deleteContentLink, getContentLinks } from "../../../api/contentLink";
-import { useEffect, useState } from "../../../lib";
+import {
+  deleteContentLink,
+  getContentLinks,
+} from "../../../../api/contentLink";
+import { useEffect, useState } from "../../../../lib";
 
 const AdminContent = () => {
   const [contentLinks, setContentLink] = useState([]);
@@ -25,8 +27,7 @@ const AdminContent = () => {
   }, [contentLinks]);
 
   return /*html*/ `
-        ${AdminHeader()}
-        </div>
+        <a class="nav-link" href="/admin">Trở về trang menu</a>
         <h1>ContentLink</h1>
         <a class="link-info" href="#/admin/listcontent/add">Add new Link</a>
         <table class="table table-bordered table-striped">
@@ -54,7 +55,9 @@ const AdminContent = () => {
                         <button data-id="${
                           contentLink.id
                         }" class="btn btn-danger btn-remove">Delete</button>
-                        <a class="link-success" href="#/admin/listcontent/${contentLink.id}/edit">Edit</a>
+                        <a class="link-success" href="#/admin/listcontent/${
+                          contentLink.id
+                        }/edit">Edit</a>
                         </td>
                     </tr>
                   `;
