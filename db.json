@@ -46,7 +46,7 @@
   "skillCard": [
     {
       "logo": [
-        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676972055/MyPortfolio/sgbfpyvf6cazdxxxqle7.png"
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676991241/MyPortfolio/hqj2jeepmf89oofdbike.png"
       ],
       "title": "HTML",
       "id": 1
@@ -64,6 +64,30 @@
       ],
       "title": "PHP",
       "id": 3
+    }
+  ],
+  "projects": [
+    {
+      "name": "trang html",
+      "web": "adfsdf",
+      "github": "asdfasdf",
+      "cardid": "3",
+      "id": 5
+    },
+    {
+      "name": "trang html update",
+      "web": "adfsdf",
+      "github": "asdfasdf",
+      "cardid": "2",
+      "id": 6
+    }
+  ],
+  "listCustomers": [
+    {
+      "name": "Bùi Tiến Cường",
+      "email": "cuongbui1572003@gmail.com",
+      "phone": "0382470415",
+      "id": 1
     }
   ]
 }

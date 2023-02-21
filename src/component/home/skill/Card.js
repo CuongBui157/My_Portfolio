@@ -9,9 +9,10 @@ const Card = () => {
   }, []);
 
   return /*html*/ `
-            ${skillCards.map((card) => {
-              for (let i = 0; i < 3; i++) {
-                return /*html*/ `
+            ${skillCards
+              .map((card) => {
+                for (let i = 0; i < 3; i++) {
+                  return /*html*/ `
                         <div class="skill-item__card">
                             <div class="header-card">
                                 <div class="img-card">
@@ -21,7 +22,7 @@ const Card = () => {
                             </div>
                 
                             <div class="content-card">
-                                <a class="btn-link" href="#">
+                                <a class="btn-link" href="#/${card.id}/projects">
                                     Xem dự án
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +42,9 @@ const Card = () => {
                             </div>
                     </div>
                     `;
-              }
-            }).join("")}
+                }
+              })
+              .join("")}
   `;
 };
 

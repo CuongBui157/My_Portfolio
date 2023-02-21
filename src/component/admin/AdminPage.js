@@ -13,10 +13,13 @@ const AdminPage = () => {
                     <a class="nav-link" href="admin/about">AboutContent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/card">Skill</a>
+                    <a class="nav-link" href="admin/card">SkillContent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="admin/projects">SkillProjects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin/listcustomers">List Of Customers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-success" href="/home" tabindex="-1" >Home</a>
