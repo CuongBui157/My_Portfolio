@@ -42,5 +42,28 @@
       "content": "Chào các bạn, tôi là Bùi Tiến Cường. Hiện tại tôi là sinh viên kỳ 5 tại FTP Polytechnic.Tôi là một Front end Developer chịu trách nhiệm phát triển giao diện bên ngoài của một website dựa vào những bản thiết kế. Tôi sẽ trở thành một FE-Dev giỏi và được mức lương 1000$.",
       "id": 1
     }
+  ],
+  "skillCard": [
+    {
+      "logo": [
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676972055/MyPortfolio/sgbfpyvf6cazdxxxqle7.png"
+      ],
+      "title": "HTML",
+      "id": 1
+    },
+    {
+      "logo": [
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676972075/MyPortfolio/szw74o2zyuhkndxoowmg.png"
+      ],
+      "title": "Js",
+      "id": 2
+    },
+    {
+      "logo": [
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676972084/MyPortfolio/yoykdrqvxk0roqbwnxri.png"
+      ],
+      "title": "PHP",
+      "id": 3
+    }
   ]
 }

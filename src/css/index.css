@@ -25,9 +25,7 @@
   font-family: "Poppins", sans-serif;
   margin: auto;
   padding: 0 10px;
-  background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 0%, #00693e 100%);
-
+  background: #8FBC8B;
 }
 .home .author {
   text-align: center;
@@ -70,7 +68,7 @@ main #banner {
   padding: 30px 0;
 }
 main #banner .banner-hello {
-  font-size: 40px;
+  font-size: 30px;
   padding-left: 200px;
 }
 main #banner .banner-img {

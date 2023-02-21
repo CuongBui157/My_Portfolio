@@ -1,5 +1,3 @@
-
-
 const AdminPage = () => {
   return /*html*/ `
       <h1>Menu Admin</h1>
@@ -15,7 +13,10 @@ const AdminPage = () => {
                     <a class="nav-link" href="admin/about">AboutContent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skill</a>
+                    <a class="nav-link" href="admin/card">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-success" href="/home" tabindex="-1" >Home</a>
