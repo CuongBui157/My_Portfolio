@@ -17,20 +17,10 @@
       "id": 2
     },
     {
-      "name": "Instagram",
-      "img": [
-        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676900898/MyPortfolio/xv8ahpa2bd3q4ikpb0lb.avif"
-      ],
+      "name": "Instagram update",
+      "img": [],
       "link": "#",
       "id": 3
-    },
-    {
-      "name": "Github",
-      "img": [
-        "https://res.cloudinary.com/dyewrrq39/image/upload/v1676906043/MyPortfolio/jclykyd2nonxn9t9bjg6.png"
-      ],
-      "link": "https://github.com/CuongBui157",
-      "id": 4
     }
   ],
   "aboutContent": [
@@ -64,6 +54,13 @@
       ],
       "title": "PHP",
       "id": 3
+    },
+    {
+      "logo": [
+        "https://res.cloudinary.com/dyewrrq39/image/upload/v1677035156/MyPortfolio/mssndsgnusb2rvuf7sep.png"
+      ],
+      "title": "CSS",
+      "id": 4
     }
   ],
   "projects": [
@@ -80,6 +77,13 @@
       "github": "asdfasdf",
       "cardid": "2",
       "id": 6
+    },
+    {
+      "name": "trang html",
+      "web": "adfsdf",
+      "github": "asdfasdf",
+      "cardid": "2",
+      "id": 7
     }
   ],
   "listCustomers": [
